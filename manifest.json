@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Hacker News Plus",
+    "description": "This extension adds hoverable links to enhance the Hacker News comment section.",
+    "version": "0.1",
+    "icons": {
+        "16" : "imgs/icon16.png",
+        "48" : "imgs/icon48.png",
+        "128" : "imgs/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://news.ycombinator.com/item*", "https://news.ycombinator.com/item*"],
+            "css": ["css/hacker-news-plus-styles.css"],
+            "js": ["js/hacker-news-plus.js"]
+        }
+    ]
+}

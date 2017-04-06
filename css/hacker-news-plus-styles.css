@@ -1,0 +1,41 @@
+.hnp-tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+}
+
+.hnp-tooltip .hnp-tooltiptext {
+    visibility: hidden;
+    width: 800px; /* Will be overwritten */
+    background-color: #1d1d1a;
+    color: #ffffff;
+    padding: 6px 6px;
+    border-radius: 6px;
+    z-index: 1;
+    cursor: text;
+
+    /* Match the default font */
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 9pt;
+ 
+    /* Center the tooltip */
+    position: absolute;
+    top: 1pt;
+    left: 0;
+    transform: translate(0, -100%);
+}
+
+.hnp-tooltip:hover .hnp-tooltiptext {
+    visibility: visible;
+}
+
+/* Main container of parent/reply links */
+.hnp-links-container {
+    display: block;
+}
+
+/* These container contain the tooltips */
+.hnp-parent-links, .hnp-reply-links {
+    display: inline-block;
+}
